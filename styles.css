@@ -1,0 +1,321 @@
+html {
+  background-color: #71a807;
+}
+
+body {
+  direction: rtl;
+  text-align: right;
+  font-family: Assistant;
+  padding-top: 200px;
+  background-color: white;
+  color: #003535;
+  min-height: 100vh;
+  margin: 0;
+}
+
+a {
+  color: #003535;
+}
+
+h1, h2 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+
+.container {
+  padding: 0;
+  position: relative;
+}
+
+/* colors */
+.btn {
+  font-size: 18px;
+  height: 53px;
+  border-radius: 27px;
+  padding: 0px 20px;
+  font-family: arial;
+  border-width: 2px;
+  font-family: Assistant;
+}
+
+.btn-primary,
+.btn-outline-primary:hover {
+  background-color: #d31856;
+  border-color: #d31856;
+}
+
+.btn-outline-primary,
+.btn-primary:hover {
+  border-color: #d31856;
+  color: #d31856;
+  background-color: white;
+}
+
+.btn-secondary,
+.btn-outline-secondary:hover {
+  background-color: #71a807;
+  border-color: #71a807;
+}
+
+.btn-outline-secondary,
+.btn-secondary:hover {
+  border-color: #71a807;
+  color: #71a807;
+  background-color: white;
+}
+
+.bg1 {
+  background-color: #eef8f8;
+}
+
+.bg2 {
+  background-color: #f1f6e6;
+}
+
+.bg3 {
+  background-color: #d31856;
+}
+
+nav {
+  background: #71a807;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 8px 0px rgba(0,0,0,.3);
+  z-index: 1;
+}
+
+nav a {
+  color: white;
+}
+
+nav,
+#logo img {
+  height: 100%;
+  height: 106px;
+}
+
+nav .btn {
+  font-weight: bold;
+  border: 3px solid white;
+  height: 57px;
+  border-radius: 28px;
+}
+
+#profile img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-left: 7px;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  background-color: black;
+  border: 1px solid #dfdcd6;
+  border-radius: 5px;
+}
+
+@media (max-width: 575px) {
+  iframe {
+    width: auto;
+    height: auto;
+    margin: auto;
+  } 
+}
+
+#funding {
+  color: #4d7272;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+#funding strong {
+  font-size: 23px;
+  color: #003535;
+  position: relative;
+  top: 5px;
+}
+
+.progress, .progress-bar {
+  border-radius: 7px;
+  height: 13px;
+}
+.progress {
+  background-color: #e0e0e0;
+  margin: 10px 0;
+}
+.progress-bar {
+  background-color: #96db00;
+}
+
+#tabs {
+  margin-top: 40px;
+}
+
+#tab-content {
+  background-color: #8ad2ce;
+  padding: 30px 0;
+}
+
+.nav {
+  height: 70px;
+  position: relative;
+  right: -1rem;
+}
+
+.nav-link {
+  position: relative;
+  line-height: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.nav-link:hover {
+  background-color: #e1eceb;
+  color: inherit;
+}
+.nav-link.active:after {
+  content: '';
+  position: absolute;
+  bottom: 18px;
+  left: 15px;
+  right: 15px;
+  height: 4px;
+  background: #048184;
+  border-radius: 2px;
+}
+
+#update-count {
+  background: #e1eceb;
+  padding: 0 4px;
+  font-size: 13px;
+  border-radius: 2px;
+}
+
+.nav-link:hover #update-count {
+  background: #eef8f8;
+}
+
+.box {
+  background-color: white;
+  padding: 25px 30px;
+  margin: 30px 0;
+}
+.box h2 {
+  margin-bottom: 20px;
+}
+
+#about {
+  background: url(img/why.jpg) no-repeat right top;
+  background-size: contain;
+}
+
+@media (min-width: 1200px) {
+  #about {
+    background-size: 55%;
+  } 
+}
+
+#you {
+  padding: 50px 0;
+}
+
+#you .container {
+  background: url(img/you.jpg) no-repeat left top;
+  background-size: contain;
+}
+
+#surpass {
+  padding: 50px;
+  background-image: url(img/surpass.jpg);
+  background-size: cover;
+}
+
+.inverse {
+  color: white;
+  position: relative;
+}
+
+.inverse:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.75);
+}
+
+#countdown {
+  color: #d31856;
+  text-align: center;
+  padding: 50px 0;
+  transition: opacity 0.5s ease-in;
+}
+
+#countdown:not([data-ready]) {
+  opacity: 0;
+}
+
+#clock {
+  display: inline-block;
+}
+
+#countdown span {
+  font-size: 79px;
+  display: inline;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+  position: relative;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+
+#countdown span:after {
+  font-size: 22px;
+  font-weight: normal;
+  position: absolute;
+  left: 4px;
+  bottom: -13px;
+  font-family: Assistant;
+  color: #003535;
+}
+
+#days {
+  color: #003535;
+  margin-left: 40px;
+}
+
+#days:empty {
+  display: none;
+}
+
+#days:after {
+  content: ' ימים';
+  font-size: 43px  !important;
+  position: static !important;
+}
+
+#hours:after {
+  content: ' שעות';
+}
+
+#minutes:after {
+  content: ' דקות';
+}
+
+#seconds:after {
+  content: ' שניות';
+}
+
+#minutes:before,
+#hours:before {
+  content: ':';
+  margin-left: 2px;
+  font-size: 70px;
+  vertical-align: top;
+}
