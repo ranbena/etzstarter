@@ -72,7 +72,7 @@ h3 {
 }
 
 .btn-border-white {
-  border-color: white;
+  border-color: white !important;
 }
 
 .bg1 {
