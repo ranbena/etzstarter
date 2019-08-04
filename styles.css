@@ -162,6 +162,10 @@ iframe {
   top: 5px;
 }
 
+#funding .flex-grow-1 {
+  display: inline-block; /* fix for ie10 */
+}
+
 .progress, .progress-bar {
   border-radius: 7px;
   height: 13px;
