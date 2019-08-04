@@ -5,7 +5,7 @@ html {
 body {
   direction: rtl;
   text-align: right;
-  font-family: Assistant;
+  font-family: Assistant, "Segoe UI", arial;
   font-size: 20px;
   padding-top: 200px;
   background-color: white;
@@ -42,7 +42,7 @@ h3 {
   padding: 0px 20px;
   font-family: arial;
   border-width: 2px;
-  font-family: Assistant;
+  font-family: Assistant, "Segoe UI", arial;
 }
 
 .btn-primary,
@@ -300,7 +300,7 @@ iframe {
   position: absolute;
   left: 4px;
   bottom: -13px;
-  font-family: Assistant;
+  font-family: Assistant, "Segoe UI", arial;
   color: #003535;
 }
 
