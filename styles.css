@@ -89,7 +89,6 @@ h3 {
 
 nav {
   background: #71a807;
-  color: white;
   position: fixed;
   top: 0;
   left: 0;
@@ -98,14 +97,21 @@ nav {
   z-index: 1;
 }
 
+nav,
 nav a {
-  color: white;
+  color: white !important;
 }
 
-nav,
-#logo img {
+nav .container {
   height: 100%;
+}
+
+nav {
   height: 106px;
+}
+
+nav .logo img {
+  height: 80px;
 }
 
 nav .btn {
@@ -175,7 +181,7 @@ iframe {
 
 .nav {
   height: 70px;
-  position: relative;
+  overflow: hidden;
   right: -1rem;
 }
 
@@ -205,6 +211,8 @@ iframe {
   padding: 0 4px;
   font-size: 13px;
   border-radius: 2px;
+  position: relative;
+  top: -2px;
 }
 
 .nav-link:hover #update-count {
@@ -397,4 +405,32 @@ iframe {
   float: left;
   margin: 0 20px 10px 0;
   padding: 0 !important;
+}
+
+footer {
+  background-color: #048184;
+  padding: 30px 0;
+}
+
+footer {
+  color: rgba(255,255,255,0.7) !important;
+}
+
+footer a {
+  color: white !important;
+  opacity: 0.7;
+}
+
+footer .logo img {
+  height: 100px;
+}
+
+#info {
+  text-align: left;
+  font-size: 16px;
+}
+
+.link {
+  background: url(img/link.svg) no-repeat right 9px;
+  padding-right: 17px;
 }
