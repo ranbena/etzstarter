@@ -1,13 +1,29 @@
+.hide-mobile {
+  display: none !important;
+}
+
+.show-mobile {
+  display: block;
+}
+
 html {
   font-size: 14px;
+}
+
+body {
+  padding-bottom: 70px; /* for fixed footer */
 }
 
 .container {
   padding: 0 20px;
 }
 
+.iframe-container {
+  padding: 0;
+}
+
 iframe {
-  width: calc(100% - 40px);
+  /* width: calc(100% - 40px); */
 }
 
 .slick-arrow {
@@ -30,3 +46,67 @@ iframe {
   font-size: 1.5rem;
 }
 
+#clock {
+  display: block;
+  margin-bottom: 20px;
+}
+
+#minutes:before, #hours:before {
+  vertical-align: text-top;
+  font-size: 3.5rem;
+}
+
+#days {
+  margin-right: 0;
+}
+
+#short {
+  padding-bottom: 0;
+}
+
+.box {
+  margin: 250px 20px 0;
+}
+
+#you, #tab-content {
+  padding: 0;
+}
+
+
+#tab-content, .bg2 {
+  background: white;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  height: 70px;
+  padding: 0;
+}
+
+footer .container {
+  height: 100%;
+  padding: 0 15px;
+}
+
+footer a {
+  color: initial !important;
+  font-size: 1.4rem !important;
+  opacity: 1;
+  border: 1px solid black;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+}
+
+footer a svg {
+  width: 30px;
+  height: 30px;
+  margin-top: -6px;
+  fill: #4d7272;
+}
