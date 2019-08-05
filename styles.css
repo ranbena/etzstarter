@@ -1,8 +1,12 @@
+html {
+  font-size: 16px;
+}
+
 body {
   direction: rtl;
   text-align: right;
   font-family: Assistant, "Segoe UI", arial;
-  font-size: 20px;
+  font-size: 1.25rem;
   padding-top: 180px;
   background-color: white;
   color: #003535;
@@ -58,7 +62,7 @@ li:not(:last-child) {
 
 /* colors */
 .btn {
-  font-size: 18px;
+  font-size: 1.1rem;
   height: 53px;
   border-radius: 27px;
   padding: 0px 20px;
@@ -145,7 +149,7 @@ nav .btn {
 
 #english {
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 1rem;
   position: relative;
   left: 22px;
 }
@@ -170,22 +174,14 @@ iframe {
   border-radius: 5px;
 }
 
-@media (max-width: 575px) {
-  iframe {
-    width: auto;
-    height: auto;
-    margin: auto;
-  } 
-}
-
 #funding {
   color: #4d7272;
-  font-size: 14px;
+  font-size: 0.9rem;
   margin: 20px 0 38px;
 }
 
 #funding strong {
-  font-size: 23px;
+  font-size: 1.4rem;
   color: #003535;
   position: relative;
   top: 5px;
@@ -268,7 +264,7 @@ iframe {
   background-color: white;
   padding: 25px 30px;
   margin: 30px 0;
-  font-size: 16px;
+  font-size: 1rem;
 }
 .box h2 {
   margin-bottom: 20px;
@@ -300,7 +296,7 @@ iframe {
 }
 
 #surpass {
-  padding: 50px;
+  padding: 50px 0;
   background-image: url(img/surpass.jpg);
   background-size: cover;
 }
@@ -336,7 +332,7 @@ iframe {
 }
 
 #countdown span {
-  font-size: 79px;
+  font-size: 4.9rem;
   display: inline;
   font-weight: bold;
   font-variant-numeric: tabular-nums;
@@ -345,7 +341,7 @@ iframe {
 }
 
 #countdown span:after {
-  font-size: 21px;
+  font-size: 1.3rem;
   font-weight: normal;
   position: absolute;
   left: 5px;
@@ -389,7 +385,7 @@ iframe {
 #hours:before {
   content: ':';
   margin-left: 2px;
-  font-size: 70px;
+  font-size: 4.3rem;
   vertical-align: top;
 }
 
@@ -423,6 +419,7 @@ iframe {
 .gift {
   position: relative;
   padding: 10px;
+  direction: rtl;
 }
 
 .gift img {
@@ -453,7 +450,7 @@ iframe {
 }
 
 .gift span:after {
-  font-size: 10px;
+  font-size: 0.6rem;
   margin-right: 4px;
   content: 'תרומה';
 }

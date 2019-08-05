@@ -1,0 +1,45 @@
+html {
+  font-size: 14px;
+}
+
+.container {
+  padding: 0 20px;
+}
+
+iframe {
+  width: calc(100% - 40px);
+}
+
+/* larger carousel buttons */
+.slick-prev:before, .slick-next:before {
+  font-size: 60px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -15px;
+}
+
+.slick-next {
+  right: 25px;
+}
+
+.gift h3 {
+  font-size: 1.7rem;
+}
+
+.gift span {
+  font-size: 2rem;
+}
+
+.gift span:after {
+  font-size: 1.3rem;
+}
+
+.btn {
+  font-size: 1.5rem;
+}
+
