@@ -416,6 +416,24 @@ iframe {
   height: 326px; /* prevents a "jump" in full size desktop */
 }
 
+
+/* larger carousel buttons */
+.slick-prev:before, .slick-next:before {
+  font-size: 40px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 1;
+}
+
+.slick-prev {
+  left: -35px;
+}
+
+.slick-next {
+  right: -15px;
+}
+
 .gift {
   position: relative;
   padding: 10px;
