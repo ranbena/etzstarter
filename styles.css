@@ -24,6 +24,11 @@ h3 {
   font-weight: bold;
 }
 
+h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 ul {
   padding-right: 36px;
 }
@@ -33,6 +38,18 @@ li:not(:last-child) {
   padding-right: 6px;
 }
 
+.plus {
+  list-style: none;
+  padding: 0;
+}
+
+.plus h4:before {
+  content: '+ ';
+}
+
+.plus p {
+  padding-right: 17px;
+}
 
 .container {
   padding: 0;
@@ -266,6 +283,11 @@ iframe {
   #about {
     background-size: 55%;
   } 
+}
+
+#faq-inner {
+  background: white;
+  padding: 20px;
 }
 
 #you {
