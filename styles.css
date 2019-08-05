@@ -1,13 +1,9 @@
-html {
-  background-color: #71a807;
-}
-
 body {
   direction: rtl;
   text-align: right;
   font-family: Assistant, "Segoe UI", arial;
   font-size: 20px;
-  padding-top: 200px;
+  padding-top: 180px;
   background-color: white;
   color: #003535;
   min-height: 100vh;
@@ -28,6 +24,15 @@ h3 {
   font-weight: bold;
 }
 
+ul {
+  padding-right: 36px;
+}
+
+li:not(:last-child) {
+  padding-bottom: 15px;
+  padding-right: 6px;
+}
+
 
 .container {
   padding: 0;
@@ -43,6 +48,7 @@ h3 {
   font-family: arial;
   border-width: 2px;
   font-family: Assistant, "Segoe UI", arial;
+  font-weight: 600;
 }
 
 .btn-primary,
@@ -115,10 +121,16 @@ nav .logo img {
 }
 
 nav .btn {
-  font-weight: bold;
   border-width: 3px;
   height: 57px;
   border-radius: 28px;
+}
+
+#english {
+  vertical-align: middle;
+  font-size: 16px;
+  position: relative;
+  left: 22px;
 }
 
 .logo {
@@ -152,7 +164,7 @@ iframe {
 #funding {
   color: #4d7272;
   font-size: 14px;
-  margin: 20px 0;
+  margin: 20px 0 38px;
 }
 
 #funding strong {
@@ -164,6 +176,22 @@ iframe {
 
 #funding .flex-grow-1 {
   display: inline-block; /* fix for ie10 */
+}
+
+#buttons a {
+  vertical-align: top;
+  text-decoration: none !important;
+  margin-right: 4px;
+}
+
+#buttons a svg {
+  fill: #4d7272;
+  width: 17px;
+  height: 17px;
+}
+
+#buttons a:hover svg {
+  fill: #003535;
 }
 
 .progress, .progress-bar {
@@ -179,7 +207,7 @@ iframe {
 }
 
 #tabs {
-  margin-top: 40px;
+  margin-top: 70px;
 }
 
 #tab-content {
@@ -189,7 +217,6 @@ iframe {
 
 .nav {
   height: 70px;
-  overflow: hidden;
   right: -1rem;
 }
 
@@ -214,17 +241,10 @@ iframe {
   border-radius: 2px;
 }
 
-#update-count {
-  background: #e1eceb;
-  padding: 0 4px;
-  font-size: 13px;
-  border-radius: 2px;
-  position: relative;
-  top: -2px;
-}
-
-.nav-link:hover #update-count {
-  background: #eef8f8;
+.nav-link img {
+  height: 18px;
+  margin-right: 4px;
+  margin-top: -2px;
 }
 
 .box {
@@ -303,18 +323,21 @@ iframe {
 }
 
 #countdown span:after {
-  font-size: 22px;
+  font-size: 21px;
   font-weight: normal;
   position: absolute;
-  left: 4px;
+  left: 5px;
   bottom: -13px;
   font-family: Assistant, "Segoe UI", arial;
   color: #003535;
 }
 
 #days {
-  color: #003535;
-  margin-left: 40px;
+  color: white;
+  background: #d31856;
+  padding: 6px 13px;
+  border-radius: 10px;
+  margin-right: 40px;
 }
 
 #days:empty {
@@ -323,8 +346,9 @@ iframe {
 
 #days:after {
   content: ' ימים';
-  font-size: 43px  !important;
-  position: static !important;
+  color: white !important;
+  left: 14px !important;
+  bottom: -1px !important;
 }
 
 #hours:after {
@@ -364,12 +388,19 @@ iframe {
   margin: 0;
 }
 
-#gifts .carousel {
+#gifts #carousel {
   margin: 30px 0;
+  direction: ltr;
+}
+
+#carousel:not(.slick-initialized) {
+  opacity: 0;
+  height: 326px; /* prevents a "jump" in full size desktop */
 }
 
 .gift {
   position: relative;
+  padding: 10px;
 }
 
 .gift img {
@@ -383,7 +414,7 @@ iframe {
   padding: 4px 9px;
   position: absolute;
   bottom: 20px;
-  right: 9px;
+  right: 0;
   text-align: right;
 }
 

@@ -4,9 +4,9 @@
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="keywords" content="אקולוגיה, אקולוגיה עירונית, ירוק, טבע בעיר, דירה אקולוגית, גינה קהילתית, סביבה ירוקה, קומפוסט, גינון גרילה, סדנת גלידה, שוקולד בריא, גלידה טבעית, מיטפח, קיימות, טיפים אקולוגיים, קהילה אורגנית, חשיבה סביבתית, תזונה מתחשבת, צרכנות אחראית, הפחתה, שימוש מחדש, מיחזור, חקלאות ביתית, גינת מרפסת, טבע בעיר, חיים בני-קיימא, פרמהקלצ'ר, פרמקלצ'ר, אקולוגיה מעשית, מיחזור מים, גידול ירקות, איכות סביבה, בריאות הגוף והסביבה">
-
+  
   <meta name="description" content="עץבעיר: עסק חברתי לאקולוגיה עירונית: החיים הטובים בעיר.">
-  <meta name="author" content="Tami Zori and the CityTree team">
+  <meta name="author" content="Tami Zori and the CityTree gang">
   
   <title>אקולוגיה עירונית: עץבעיר - החיים הטובים בעיר</title>
   
@@ -16,21 +16,33 @@
   <!-- TODO: Facebook -->
   
   <link rel="stylesheet" href="https://cdn.rtlcss.com/bootstrap/v4.2.1/css/bootstrap.min.css" integrity="sha384-vus3nQHTD+5mpDiZ4rkEPlnkcyTP+49BhJ4wJeJunw06ZAp+wzzeBPUXr42fi8If" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant:400,600,700&display=swap&subset=hebrew">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
   <link rel="stylesheet" href="styles.css">
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
+
+  <script>
+    function donate(id) {
+      window.location.href = "https://www.ezpay.co.il/Payment.aspx?id=13295";
+    }
+
+    function chooseGift() {
+      window.open("https://www.ezpay.co.il/Payment.aspx?id=13295", 'gifts');
+    }
+  </script>
 </head>
 <body>
   <nav>
-    <div class="container d-flex justify-content-between align-items-center">
-      <a href="/archive/" target="_blank" class="link">
-        אל ארכיון עץבעיר</a>
+  <div class="container d-flex justify-content-between align-items-center">
+    <a href="https://citytree.net/archive/" target="_blank" class="link">
+      אל ארכיון עץבעיר</a>
       <a class="logo" href="/">
         <img src="img/logo.png" alt="עץבעיר" />
       </a>
-      <button type="button" class="btn btn-secondary btn-border-white">תמיכה בפרויקט הגיוס</button>
+      <span>
+        <a href="https://www.patreon.com/TamiZori" id="english">English</a>
+        <button type="button" onclick="donate('nav')" class="btn btn-secondary btn-border-white">תמיכה בפרויקט הגיוס</button>
+      </span>
     </div>
   </nav>
   <div class="container">
@@ -39,7 +51,7 @@
         <iframe src="https://www.youtube.com/embed/-m9R_quJgAY" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="col-md-5">
-        <h1>עץסטארט - מצילים את העץ ואת העיר!</h1>
+        <h1>מצילים את העץ ואת העיר</h1>
         <p>פרויקט גיוס ההמונים להצלת עץבעיר</p>
         <div id="profile">
           <img src="img/tami.jpeg" alt="תמי צרי" />
@@ -59,7 +71,17 @@
           </div>
           
         </div>
-        <button type="button" class="btn btn-primary">לחצו לתרום</button>
+        <span id="buttons" class="d-flex justify-content-between">
+          <button type="button" onclick="donate('section1')" class="btn btn-primary">לחצו לתרום</button>
+          <span>
+            <a href="https://citytree.net/archive/" target="_blank">
+              <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/Citytree/" target="_blank">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
+            </a>
+          </span>
+        </span>
       </div>
     </div>
   </div>
@@ -72,9 +94,9 @@
         <a class="nav-link disabled" data-toggle="tab" href="#faq" role="tab">שאלות נפוצות</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link disabled" data-toggle="tab" href="#updates" role="tab">
+        <a class="nav-link" href="https://www.facebook.com/Citytree/" target="_blank">
           עדכונים
-          <span id="update-count">0</span>
+          <img src="img/facebook.svg" alt="עדכונים בפייסבוק" />
         </a>
       </li>
     </ul>
@@ -95,7 +117,7 @@
                 <br /><br />
                 מי שמורד בשיטה, לא באמת יכול להתפרנס מהשיטה - מי שמתפרנס מהשיטה לא יכול למרוד בה.
               </p>
-              <button type="button" class="btn btn-outline-primary">לחצו לתרום</button>
+              <button type="button" onclick="donate('about')" class="btn btn-outline-primary">לחצו לתרום</button>
             </div>
           </div>
         </div>
@@ -114,23 +136,23 @@
             <br /><br />
             מאה אלף שקל זה מאה אנשים שנותנים 1000, או אלף אנשים שנותנים 100 - זה מה שהקמפיין הזה יוצא להשיג. הכסף שלכם יכול להבטיח את שלום העץ ואת המשך העבודה שלו למען החיים. הקמפיין הוא עוד הזדמנות להפיץ את האמת על מה שקורה עכשיו ממש לכדור הכחול היפה שלנו - אנא עזרו לנו להפיץ את המסר הכואב הזה! זה בדמנו.
           </p>
-          <button type="button" class="btn btn-primary">לחצו לתרום</button>
+          <button type="button" onclick="donate('yous')" class="btn btn-primary">לחצו לתרום</button>
         </div>
       </div>
     </div>
   </div>
   <div id="countdown">
-    <span id="days"></span>
     <div id="clock">
       <span id="seconds"></span>
       <span id="minutes"></span>
       <span id="hours"></span>
     </div>
+    <span id="days"></span>
   </div>
   <div class="container" id="short">
     <div class="row justify-content-center">
       <div class="col-xl-10 col-md-12 col-sm-12 col-xs-10 text-center">
-        <h2>ומה אם לא נצליח לגייס את הכסף?</h2>
+        <h2>אנחנו צריכים אתכם יותר מתמיד</h2>
         <p>
           נורא פשוט - לא יהיה עץבעיר.<br />
           נסגור, נחזור להורים, נגור אצל חברים (לאף אחד מאתנו אין חסכונות ששמנו בצד, אין לנו כסף לשלם שכר דירה כפרטים, וזה גם לא מעניין אותנו), נמשיך למרוד. תמי תעשה חוגי בית בכל הארץ, ותמשיך ללמד ולייצר מצגות שמסבירות מה הולך, אלון ימשיך לגנן ולפעול בכל פורום אקטיביסטי אפשרי, הוא ימשיך גם לכתוב שירים. לא נמות, לא בגלל הכסף.<br /><br />
@@ -139,56 +161,37 @@
           נדמה לנו שלעץבעיר עדיין יש תפקיד חשוב למלא בסיפור העצום של התנועה הגדולה, ברגעי המבחן האחרונים של האנושות - שלמקום הזה יש מה לתרום לקידום העולם היפה יותר שכולנו יודעות שאפשרי - אם גם אתן מרגישות ככה, זה הזמן להפסיק להאמין ש"מישהו אחר" כבר יטפל בזה, ש"בטח נסתדר" - אנחנו מבקשים - קחו חלק בטיפול בבעיה הזו, אנא עזרו לנו להמשיך.
           <br /><br />
         </p>
-        <button type="button" class="btn btn-secondary">לחצו לתרום</button>
+        <button type="button" onclick="donate('short')" class="btn btn-secondary">לחצו לתרום</button>
       </div>
     </div>
   </div>
   <div class="bg3" id="gifts">
     <div class="container text-center">
       <h2 class="inverse">כלכלת מתנות</h2>
-      <div class="carousel slide" data-ride="carousel">
-        <!-- <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol> -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="row">
-              <div class="gift col-sm-4">
-                <img src="img/gift1.jpg" loading="lazy" />
-                <div>
-                  <h3>טיפול בשיטת אילן רב</h3>
-                  <span>₪200</span>
-                </div>
-              </div>
-              <div class="gift col-sm-4">
-                <img src="img/gift2.jpg" loading="lazy" />
-                <div>
-                  <h3>סדנת בישול טבעוני</h3>
-                  <span>₪150</span>
-                </div>
-              </div>
-              <div class="gift col-sm-4">
-                <img src="img/gift3.jpg" loading="lazy" />
-                <div>
-                  <h3>סבון</h3>
-                  <span>₪20</span>
-                </div>
-              </div>
-            </div>
+      <div id="carousel">
+        <div class="gift">
+          <img src="img/gift1.jpg" />
+          <div>
+            <h3>טיפול בשיטת אילן רב</h3>
+            <span>₪200</span>
           </div>
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
+        <div class="gift">
+          <img src="img/gift2.jpg" />
+          <div>
+            <h3>סדנת בישול טבעוני</h3>
+            <span>₪150</span>
+          </div>
+        </div>
+        <div class="gift">
+          <img src="img/gift3.jpg" />
+          <div>
+            <h3>סבון</h3>
+            <span>₪20</span>
+          </div>
+        </div>
       </div>
-      <button type="button" class="btn btn-primary btn-border-white">בחרו מתנה</button>
+      <button type="button" onclick="chooseGift()" class="btn btn-primary btn-border-white">בחרו מתנה</button>
     </div>
   </div>
   <div class="bg1" id="story">
@@ -205,17 +208,15 @@
   <div id="surpass" class="inverse">
     <div class="container">
       <div class="row">
-        <div class="col-xl-9 col-lg-10">
+        <div class="col-lg-12">
           <h2>ומה יקרה אם נגייס יותר ממאה אלף?</h2>
           <p>
-            אך! בעזרתם של מאה אנשים שנותנים 100 שקלים בחודש, זה יכסה את שכר הדירה ועוד כמה הוצאות, ואז:
-            <br />
-            נוכל לאפשר לא'נשים ללמוד פה גם כשאין להם כסף, נוכל לתת להם מקום מגורים ומזון מיטיב ולצאת איתם לעבוד את האדמה סביב כיכר ביאליק - נגשים את חזונו של סר פטריק גדס ונַראה מה תל אביב יכולה לעשות כדי להתמודד עם המשבר האקולוגי - נתנסה בעבודה נכונה עם מחזור המים, נגדיל את פרויקט הבוקאשי שמטפל נכון בפסולת ומשקם את האדמה, נטפח סביבות חיים עשירות ומגוונות, מצמיחות מזון ורפואה, וכמובן, נשקם את החיבור שלנו לכל זה, ואת היחסים בינינו, את הקהילה. מכיכר ביאליק, נקודת דיקור עירונית, יכולה לצאת בשורת החקלאות העירונית, והאוטופיה העירונית לכל העיר!
-            <br />
-            לתמי יש הכול על פתקים ובראש, אבל אף פעם לא היה לה פנאי לשבת ולארגן את החומר, ואף פעם אין לנו משאבים לפרנס את הא'נשים שרוצים לעבוד בזה אתנו - הכסף שלכם יוכל לכלכל חמישה א'נשים שיפעלו יחדיו להגשמת החזון! 
-            <br />
-            עץבעיר יהיה חוות ההכשרה והשיקום האולטימטיבית - תמי תוכל להמשיך לחקור וללמוד, ללמד, לתעד, לתכנן ולהציג את החזון שלנו לאוטופיה עירונית בימי משבר, וא'נשים יוכלו לתרגל, ללמוד ולרכוש כלים וכישורים שהם הכרחיים לעתיד הקרוב שלנו - אנחנו חייבים ללמוד איך לגדל מזון, איך לאסוף מים, איך לקיים קהילה משגשגת בעולם שמשאביו מדולדלים - הזמן נגמר, ואנחנו מוכנים.
-            <br /><br />
+            בעזרתם של מאה אנשים שנותנים 100 שקלים בחודש, זה יכסה את שכר הדירה ועוד כמה הוצאות, ואז:<br />
+            <ul>
+              <li>נוכל לאפשר לאנשים ללמוד פה גם כשאין להם כסף, נוכל לתת להם מקום מגורים ומזון מיטיב ולצאת איתם לעבוד את האדמה סביב כיכר ביאליק - נגשים את חזונו של סר פטריק גדס ונַראה מה תל אביב יכולה לעשות כדי להתמודד עם המשבר האקולוגי - נתנסה בעבודה נכונה עם מחזור המים, נגדיל את פרויקט הבוקאשי שמטפל נכון בפסולת ומשקם את האדמה, נטפח סביבות חיים עשירות ומגוונות, מצמיחות מזון ורפואה, וכמובן, נשקם את החיבור שלנו לכל זה, ואת היחסים בינינו, את הקהילה. מכיכר ביאליק, נקודת דיקור עירונית, יכולה לצאת בשורת החקלאות העירונית, והאוטופיה העירונית לכל העיר!</li>
+              <li>לתמי יש הכול על פתקים ובראש, אבל אף פעם לא היה לה פנאי לשבת ולארגן את החומר, ואף פעם אין לנו משאבים לפרנס את האנשים שרוצים לעבוד בזה אתנו - הכסף שלכם יוכל לכלכל חמישה א'נשים שיפעלו יחדיו להגשמת החזון!</li>
+              <li>עץבעיר יהיה חוות ההכשרה והשיקום האולטימטיבית - תמי תוכל להמשיך לחקור וללמוד, ללמד, לתעד, לתכנן ולהציג את החזון שלנו לאוטופיה עירונית בימי משבר, וא'נשים יוכלו לתרגל, ללמוד ולרכוש כלים וכישורים שהם הכרחיים לעתיד הקרוב שלנו - אנחנו חייבים ללמוד איך לגדל מזון, איך לאסוף מים, איך לקיים קהילה משגשגת בעולם שמשאביו מדולדלים - הזמן נגמר, ואנחנו מוכנים.</li>
+            </ul>
             אנא, עזרו לזה לקרות!
           </p>
         </div>
@@ -224,17 +225,51 @@
   </div>
   <footer>
     <div class="container d-flex justify-content-between align-items-center">
-      <a href="/archive/" target="_blank" class="link">אל ארכיון עץבעיר</a>
+      <a href="https://citytree.net/archive/" target="_blank" class="link">אל ארכיון עץבעיר</a>
       <a class="logo" href="/">
         <img src="img/logo.png" alt="עץבעיר" />
       </a>
       <div id="info">
         אנחנו כאן לשירותך.<br />
-        03-5254196 | <a href="mailto:tree@citytree.net">tree@citytree.net</a>
+        <a href="tel:+97235254196">03-5254196</a> | <a href="mailto:tree@citytree.net">tree@citytree.net</a>
       </div>
     </div>
   </footer>
 </body>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.rtlcss.com/bootstrap/v4.2.1/js/bootstrap.min.js" integrity="sha384-a9xOd0rz8w0J8zqj1qJic7GPFfyMfoiuDjC9rqXlVOcGO/dmRqzMn34gZYDTel8k" crossorigin="anonymous"></script>
+
+<!-- gift carousel -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  $('#carousel').slick({
+    autoplay: true,
+    responsive: [
+    {
+      breakpoint: 1500,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 767,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 575,
+      setting: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    ]
+  });
+</script>
 
 <!-- countdown -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
@@ -256,7 +291,7 @@
   updateCountdown();
   document.getElementById('countdown').setAttribute('data-ready', true);
   
-  setInterval(updateCountdown, 1000);
+  // setInterval(updateCountdown, 1000);
 </script>
 
 <!-- Google Analytics -->
