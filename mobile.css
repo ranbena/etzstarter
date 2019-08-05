@@ -10,9 +10,8 @@ iframe {
   width: calc(100% - 40px);
 }
 
-/* larger carousel buttons */
-.slick-prev:before, .slick-next:before {
-  font-size: 60px;
+.slick-arrow {
+  display: none !important;
 }
 
 .gift h3 {

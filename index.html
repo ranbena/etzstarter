@@ -310,29 +310,21 @@
 <script>
   $('#carousel').slick({
     autoplay: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     responsive: [
     {
-      breakpoint: 1500,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-      }
-    },
-    {
-      breakpoint: 767,
+      breakpoint: 768,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
       }
     },
     {
-      breakpoint: 575,
+      breakpoint: 576,
       setting: {
         slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        centerMode: true,
-        centerPadding: '40px',
+        slidesToScroll: 1
       }
     }
     ]
