@@ -12,18 +12,49 @@ html {
 
 body {
   padding-bottom: 70px; /* for fixed footer */
+  padding-top: 70px; /* for fixed nav */
+}
+
+ul {
+  padding-right: 26px;
+}
+
+li {
+  padding-right: 0;
+}
+
+h1 {
+  margin-top: 18px;
 }
 
 .container {
   padding: 0 20px;
 }
 
-.iframe-container {
+
+#tabs {
+  margin-top: 0;
+}
+
+.nav {
+  right: 0;
+}
+
+#tabs .container,
+.video-container {
   padding: 0;
 }
 
+.row-video {
+  margin: 0 -20px;
+}
+
 iframe {
-  /* width: calc(100% - 40px); */
+  border-radius: 0;
+  border: 0;
+  height: 250px;
+  min-height: 0;
+  vertical-align: bottom;
 }
 
 .slick-arrow {
@@ -64,14 +95,58 @@ iframe {
   padding-bottom: 0;
 }
 
+#about {
+  background-position-y: -60px;
+}
+
+#about .row {
+  margin: 0;
+}
+
 .box {
   margin: 250px 20px 0;
+}
+
+#about .box {
+  margin-top: 280px;
 }
 
 #you, #tab-content {
   padding: 0;
 }
 
+nav {
+  height: auto;
+  min-height: 70px;
+}
+
+nav .logo {
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  top: 8px;
+}
+
+nav .logo img {
+  height: 50px;
+}
+
+.navbar-toggler {
+  position: absolute;
+  right: 4px;
+  top: 13px;
+  border: 0;
+  font-size: 1.75rem;
+}
+
+.navbar-toggler-icon {
+  border: 0;
+}
+
+.navbar-nav {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
 
 #tab-content, .bg2 {
   background: white;

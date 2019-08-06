@@ -41,9 +41,12 @@ ul {
   padding-right: 36px;
 }
 
+li {
+  padding-right: 6px;
+}
+
 li:not(:last-child) {
   padding-bottom: 15px;
-  padding-right: 6px;
 }
 
 .plus {
