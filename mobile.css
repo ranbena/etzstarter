@@ -33,7 +33,7 @@ h1 {
 
 
 #tabs {
-  margin-top: 0;
+  margin-top: 40px;
 }
 
 .nav {
@@ -57,8 +57,25 @@ iframe {
   vertical-align: bottom;
 }
 
-.slick-arrow {
-  display: none !important;
+#buttons .btn {
+  font-size: 1.2rem;
+  height: 47px;
+}
+
+.slick-prev {
+  left: -23px;
+}
+
+.slick-arrow:before {
+  font-size: 26px;
+}
+
+#gifts #carousel {
+  margin: 20px 10px;
+}
+
+.slick-next {
+  right: -18px;
 }
 
 .gift h3 {

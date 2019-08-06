@@ -417,6 +417,14 @@ iframe {
   direction: ltr;
 }
 
+.gift[onclick]:hover {
+  cursor: pointer;
+}
+
+.gift[onclick]:hover img {
+  box-shadow: 0 0 0px 5px white;
+}
+
 #carousel:not(.slick-initialized) {
   opacity: 0;
   height: 326px; /* prevents a "jump" in full size desktop */

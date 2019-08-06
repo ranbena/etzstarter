@@ -27,8 +27,12 @@
       window.location.href = "https://www.ezpay.co.il/Payment.aspx?id=13295";
     }
 
-    function chooseGift() {
-      window.open("https://docs.google.com/presentation/d/1pFrDKIWrJ5Fn0gInWlwGp0meiLJGQEFHyhelGDk8-E0/edit", 'gifts');
+    function chooseGift(id) {
+      var url = 'https://docs.google.com/presentation/d/1pFrDKIWrJ5Fn0gInWlwGp0meiLJGQEFHyhelGDk8-E0/edit';
+      if (id) {
+        url += '#slide='+id;
+      }
+      window.open(url, 'gift');
     }
   </script>
 </head>
@@ -85,25 +89,25 @@
         </div>
         <div id="funding">
           <div class="d-flex align-items-end">
-            <strong class="flex-grow-1">₪25,010</strong>
-            <span>85 תומכים</span>
+            <strong class="flex-grow-1">₪0</strong>
+            <span>0 תומכים</span>
           </div>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           <div class="d-flex">
-            <span class="flex-grow-1">25% מיעד של ₪100,000</span>
-            <span>נותרו 43 ימים</span>
+            <span class="flex-grow-1">0% מיעד של ₪100,000</span>
+            <span>נותרו <span id="days-left"></span> ימים</span>
           </div>
           
         </div>
-        <span id="buttons" class="d-flex justify-content-between align-items-center hide-mobile">
+        <span id="buttons" class="d-flex justify-content-between align-items-center">
           <button type="button" onclick="donate('section1')" class="btn btn-primary ">לחצו לתרום</button>
           <span>
-            <a href="http://archives.citytree.net/" target="_blank">
+            <a href="http://archives.citytree.net/" target="_blank" class="hide-mobile">
               <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg>
             </a>
-            <a href="https://www.facebook.com/Citytree/" target="_blank">
+            <a href="https://www.facebook.com/Citytree/" target="_blank" class="hide-mobile">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
             </a>
           </span>
@@ -217,63 +221,63 @@
     <div class="container text-center">
       <h2 class="inverse">כלכלת מתנות</h2>
       <div id="carousel">
-        <div class="gift">
+        <div class="gift" onclick="chooseGift('id.g5eff918f4a_0_7')">
           <img src="img/soap.jpg" />
           <div>
             <h3>סבון מעשה ידי אביטל</h3>
             <span>₪25</span>
           </div>
         </div>
-        <div class="gift">
+        <div class="gift" onclick="chooseGift('id.g5eff918f4a_0_15')">
           <img src="img/vinegar.jpg" />
           <div>
               <h3>חומץ מעשה ידי תמי</h3>
             <span>₪30</span>
           </div>
         </div>
-        <div class="gift">
+        <div class="gift" onclick="chooseGift('id.g5eff918f4a_0_22')">
           <img src="img/dry-fruit.jpg" />
           <div>
             <h3>תפוחים מיובשים מעשה ידי אביטל</h3>
             <span>₪30</span>
           </div>
         </div>
-        <div class="gift">
+        <div class="gift" onclick="chooseGift('id.g5eff918f4a_0_31')">
           <img src="img/crackers.jpg" />
           <div>
             <h3>קרקרים מעשה ידי אביטל</h3>
             <span>₪40</span>
           </div>
         </div>
-        <div class="gift">
+        <div class="gift" onclick="chooseGift('id.g5e6a6b8c30_0_17')">
           <img src="img/pickles.jpg" />
           <div>
             <h3>חמוצים מעשה ידי אביטל</h3>
             <span>₪40</span>
           </div>
         </div>
-        <div class="gift">
+        <div class="gift" onclick="chooseGift('id.g5e6a6b8c30_0_24')">
           <img src="img/amit-book.jpg" />
           <div>
             <h3>הספר של עמית, איש SLOW</h3>
             <span>₪90</span>
           </div>
         </div>
-        <div class="gift">
+        <div class="gift" onclick="chooseGift('id.g5e6a6b8c30_0_0')">
           <img src="img/amir.jpg" />
           <div>
             <h3>מפגש אישי עם כתבן א'</h3>
             <span>₪200</span>
           </div>
         </div>
-        <div class="gift">
+        <div class="gift" onclick="chooseGift('id.g5e6a6b8c30_0_46')">
           <img src="img/meal.jpg" />
           <div>
             <h3>ארוחה טבעונית בעץ, עד 4 סועדות</h3>
             <span>₪300</span>
           </div>
         </div>
-        <div class="gift">
+        <div class="gift" onclick="chooseGift('id.g5e6fe80244_0_14')">
           <img src="img/orlev.jpg" />
           <div>
             <h3>סיור טבע מאת אורלב צח</h3>
@@ -391,6 +395,8 @@
   document.getElementById('countdown').setAttribute('data-ready', true);
   
   setInterval(updateCountdown, 1000);
+
+  document.getElementById('days-left').innerHTML = moment(deadline).diff(moment().now, 'days');
 </script>
 
 <!-- Google Analytics -->
