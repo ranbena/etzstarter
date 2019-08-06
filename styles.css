@@ -480,10 +480,10 @@ iframe {
   color: #4d7272;
 }
 
-.gift span:after {
-  font-size: 0.6rem;
-  margin-right: 4px;
-  content: 'תרומה';
+.gift span:before {
+  font-size: 1.1rem;
+  margin-left: 4px;
+  content: ' בכל תרומה מעל';
 }
 
 #story {
