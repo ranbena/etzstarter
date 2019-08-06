@@ -430,13 +430,14 @@ iframe {
   height: 326px; /* prevents a "jump" in full size desktop */
 }
 
+.slick-arrow {
+  z-index: 1;
+  width: 25px;
+  height: 22px;
+}
 
 .slick-arrow:before {
   font-size: 40px;
-}
-
-.slick-arrow {
-  z-index: 1;
 }
 
 .slick-prev {
@@ -444,7 +445,7 @@ iframe {
 }
 
 .slick-next {
-  right: -15px;
+  right: -20px;
 }
 
 .gift {

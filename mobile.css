@@ -66,16 +66,16 @@ iframe {
   left: -23px;
 }
 
+.slick-next {
+  right: -23px;
+}
+
 .slick-arrow:before {
   font-size: 26px;
 }
 
 #gifts #carousel {
   margin: 20px 10px;
-}
-
-.slick-next {
-  right: -18px;
 }
 
 .gift h3 {
