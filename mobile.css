@@ -79,11 +79,15 @@ iframe {
 }
 
 .gift h3 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .gift span {
   font-size: 2rem;
+}
+
+.gift[onclick]:hover img {
+  box-shadow: none;
 }
 
 .btn {
