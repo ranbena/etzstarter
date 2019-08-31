@@ -4,6 +4,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -71,12 +72,32 @@ li:not(:last-child) {
 .btn {
   font-size: 1.1rem;
   height: 53px;
+  line-height: 50px;
   border-radius: 27px;
   padding: 0px 20px;
   font-family: arial;
   border-width: 2px;
   font-family: Assistant, "Segoe UI", arial;
   font-weight: 600;
+}
+
+.btn {
+  background-color: #6e8c8c;
+  border-color: #6e8c8c;
+  color: white;
+}
+
+.btn:hover {
+  border-color: #6e8c8c;
+  color: #6e8c8c;
+  background-color: white;
+}
+
+.btn-outline-primary,
+.btn-primary:hover {
+  border-color: #d31856;
+  color: #d31856;
+  background-color: white;
 }
 
 .btn-primary,
@@ -198,20 +219,47 @@ iframe {
   display: inline-block; /* fix for ie10 */
 }
 
-#buttons a {
+#buttons {
+  text-align: left;
+}
+
+#buttons .btn {
+  margin-left: 4px;
+}
+
+#buttons a:not(.btn) {
   vertical-align: top;
   text-decoration: none !important;
   margin-right: 4px;
 }
 
-#buttons a svg {
+#buttons a:not(.btn) svg {
   fill: #4d7272;
   width: 17px;
   height: 17px;
 }
 
-#buttons a:hover svg {
+#buttons a:not(.btn):hover svg {
   fill: #003535;
+}
+
+#gifts-link svg {
+  fill: white;
+  width: 22px;
+  height: 22px;
+  position: relative;
+  top: -2px;
+  right: 2px;
+}
+
+#gifts-link:hover svg {
+  fill: #6e8c8c;
+}
+
+/* spacing for scroll position */
+#gifts-anchor {
+  margin-top: -136px;
+  padding-top: 136px;
 }
 
 .progress, .progress-bar {
