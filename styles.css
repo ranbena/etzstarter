@@ -254,11 +254,12 @@ iframe {
   position: relative;
   top: -2px;
   right: 3px;
-  transform: rotate(-9deg);
+  transition: transform 0.1s ease-in;
 }
 
 #gifts-link:hover svg {
-  fill: #6e8c8c;
+  fill: #048184;
+  transform: rotate(-9deg) translateX(1px) scale(1.08);
 }
 
 /* spacing for scroll position */
