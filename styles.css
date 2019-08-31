@@ -82,14 +82,14 @@ li:not(:last-child) {
 }
 
 .btn {
-  background-color: #6e8c8c;
-  border-color: #6e8c8c;
+  background-color: #048184;
+  border-color: #048184;
   color: white;
 }
 
 .btn:hover {
-  border-color: #6e8c8c;
-  color: #6e8c8c;
+  border-color: #048184;
+  color: #048184;
   background-color: white;
 }
 
@@ -224,7 +224,7 @@ iframe {
 }
 
 #buttons .btn {
-  margin-left: 4px;
+  margin-left: 8px;
 }
 
 #buttons a:not(.btn) {
@@ -243,13 +243,18 @@ iframe {
   fill: #003535;
 }
 
+#gifts-link {
+  padding-left: 15px;
+}
+
 #gifts-link svg {
   fill: white;
   width: 22px;
   height: 22px;
   position: relative;
   top: -2px;
-  right: 2px;
+  right: 3px;
+  transform: rotate(-9deg);
 }
 
 #gifts-link:hover svg {

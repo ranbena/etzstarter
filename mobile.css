@@ -75,6 +75,12 @@ iframe {
   font-size: 26px;
 }
 
+#gifts-link svg {
+  width: 20px;
+  height: 20px;
+  top: -1px;
+}
+
 #gifts #carousel {
   margin: 20px 10px;
 }
