@@ -83,29 +83,30 @@
   </nav>
   <div class="container">
     <div class="row row-video flex-row-reverse">
-      <div class="col-md-7 video-container">
+      <!-- <div class="col-md-7 video-container">
         <iframe src="https://www.youtube.com/embed/81snpPninKg" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-      </div>
+      </div> -->
+      <div class="col-md-7 image-container"></div>
       <div class="col-md-5">
-        <h1>מצילים את העץ ואת העיר</h1>
-        <p>עץסטארט: קמפיין מימון קהילתי להצלת עץבעיר</p>
+        <h1>עץסטארט</h1>
+        <p>קמפיין המימון הקהילתי של עץבעיר</p>
         <div id="profile">
           <img src="img/tami.jpeg" alt="תמי צרי" />
           תמי צרי
         </div>
         <div id="funding">
           <div class="d-flex align-items-end">
-            <strong class="flex-grow-1">₪70,183</strong>
-            <span>194 תומכים</span>
+            <strong class="flex-grow-1">₪104,817</strong>
+            <span>279 תומכים</span>
           </div>
           <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+            <div class="progress-bar" role="progressbar" style="width: 100%"></div>
           </div>
           <div class="d-flex">
             <span class="flex-grow-1">
-              70%
+              104%
               מיעד של ₪100,000</span>
-            <span>נותרו <span id="days-left"></span> ימים</span>
+            <span>הגיוס ממשיך</span>
           </div>
           
         </div>
@@ -207,14 +208,14 @@
       </div>
     </div>
   </div>
-  <div id="countdown">
+  <!-- <div id="countdown">
     <div id="clock">
       <span id="seconds"></span>
       <span id="minutes"></span>
       <span id="hours"></span>
     </div>
     <span id="days"></span>
-  </div>
+  </div> -->
   <div class="container" id="short">
     <div class="row justify-content-center">
       <div class="col-xl-10 col-md-12 col-sm-12 col-xs-10 text-center">
@@ -532,7 +533,7 @@
 </script>
 
 <!-- countdown -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 <script>
   var deadline = moment('2019-09-21 23:59');
   function updateCountdown() {
@@ -554,7 +555,7 @@
   setInterval(updateCountdown, 1000);
 
   document.getElementById('days-left').innerHTML = moment(deadline).diff(moment().now, 'days');
-</script>
+</script> -->
 
 <!-- Google Analytics -->
 <script async>

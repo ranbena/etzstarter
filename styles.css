@@ -262,6 +262,14 @@ iframe {
   transform: rotate(-9deg) translateX(1px) scale(1.08);
 }
 
+.image-container {
+  background-position: 68% 0; /* centering figures in pic */
+  background-image: url(img/Thanks.jpg);
+  background-size: cover;
+  height: 420px; /* blaze it */
+  box-shadow: 0 0 34px 0px inset #0000001f;
+}
+
 /* spacing for scroll position */
 #gifts-anchor {
   margin-top: -136px;
@@ -451,7 +459,7 @@ iframe {
 }
 
 #short {
-  padding-bottom: 50px;
+  padding: 50px 0;
 }
 
 #short h2 {
