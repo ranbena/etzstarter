@@ -29,8 +29,8 @@
   <link rel="stylesheet" href="mobile.css" media="(max-width: 575px)" />
 
   <script>
-    function donate(id) {
-      window.location.href = "https://www.ezpay.co.il/Payment.aspx?id=13295";
+    function donateBit() {
+      // open bit popup
     }
 
     function chooseGift(id) {
@@ -50,8 +50,8 @@
         <img src="img/logo.png" alt="עץבעיר" />
       </a>
       <span>
-        <a href="https://www.patreon.com/TamiZori" id="english" class="hide-mobile">English</a>
-        <button type="button" onclick="donate('nav')" class="btn btn-secondary btn-border-white hide-mobile">תרמו לעץ</button>
+        <!-- <a href="https://www.patreon.com/TamiZori" id="english" class="hide-mobile">English</a> -->
+        <a href="#donate-anchor" class="btn btn-secondary btn-border-white">תרמו לעץ</a>
       </span>
     </div>
   </nav>
@@ -82,50 +82,23 @@
     </div>
   </nav>
   <div class="container">
-    <div class="row row-video flex-row-reverse">
-      <!-- <div class="col-md-7 video-container">
-        <iframe src="https://www.youtube.com/embed/81snpPninKg" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
-      </div> -->
+    <div class="row flex-row-reverse">
       <div class="col-md-7 image-container"></div>
-      <div class="col-md-5">
-        <h1>עץסטארט</h1>
-        <p>קמפיין המימון הקהילתי של עץבעיר</p>
-        <div id="profile">
-          <img src="img/tami.jpeg" alt="תמי צרי" />
-          תמי צרי
-        </div>
-        <div id="funding">
-          <div class="d-flex align-items-end">
-            <strong class="flex-grow-1">₪104,817</strong>
-            <span>279 תומכים</span>
-          </div>
-          <div class="progress">
-            <div class="progress-bar" role="progressbar" style="width: 100%"></div>
-          </div>
-          <div class="d-flex">
-            <span class="flex-grow-1">
-              104%
-              מיעד של ₪100,000</span>
-            <span>הגיוס ממשיך</span>
-          </div>
-          
-        </div>
+      <div class="col-md-5 top-content">
+        <h1>עץ חוזר הביתה</h1>
+        <p>
+          קורונה החזירה אותנו הביתה - אנחנו עכשיו יוצרות סדרת סרטונים חדשה שמפיצה מידע <a href="http://citytree.net/cominghome">גם באנגלית</a> וגם בעברית,
+          מידע שיכול להציל חיים ובינתים אנחנו עושות איתו חיים
+          בשיעורי זום, בהתנסות ובמחקר בבית האקולוגי בכיכיר ביאליק בתל אביב.
+        </p>
+        <p>
+          מוזמנות להצטרף לסדנאות בזום או בבית, לבוא לבקר אותנו ביום שלישי, לקבוע לעצמכם סיור או סדנא ולבוא לעבוד איתנו בגינה.
+        </p>
+        <p>
+          את המידע אנחנו מפיצות במתנה וכדי שנוכל להמשיך בעבודה אנא תמכו בנו במתנה של כסף.
+        </p>
         <span id="buttons" class="d-flex align-items-center">
-          <button type="button" onclick="donate('section1')" class="btn btn-primary ">תרמו לעץ</button>
-          <a href="#gifts-anchor" id="gifts-link" class="btn btn-outline">
-            לאלבום המתנות 
-            <svg width="24" height="24" viewBox="0 0 14 16">
-              <path d="M13 4h-1.38c.19-.33.33-.67.36-.91.06-.67-.11-1.22-.52-1.61C11.1 1.1 10.65 1 10.1 1h-.11c-.53.02-1.11.25-1.53.58-.42.33-.73.72-.97 1.2-.23-.48-.55-.88-.97-1.2-.42-.32-1-.58-1.53-.58h-.03c-.56 0-1.06.09-1.44.48-.41.39-.58.94-.52 1.61.03.23.17.58.36.91H1.98c-.55 0-1 .45-1 1v3h1v5c0 .55.45 1 1 1h9c.55 0 1-.45 1-1V8h1V5c0-.55-.45-1-1-1H13zm-4.78-.88c.17-.36.42-.67.75-.92.3-.23.72-.39 1.05-.41h.09c.45 0 .66.11.8.25s.33.39.3.95c-.05.19-.25.61-.5 1h-2.9l.41-.88v.01zM4.09 2.04c.13-.13.31-.25.91-.25.31 0 .72.17 1.03.41.33.25.58.55.75.92L7.2 4H4.3c-.25-.39-.45-.81-.5-1-.03-.56.16-.81.3-.95l-.01-.01zM7 12.99H3V8h4v5-.01zm0-6H2V5h5v2-.01zm5 6H8V8h4v5-.01zm1-6H8V5h5v2-.01z"></path>
-            </svg>
-          </a>
-          <span class="flex-fill justify-content-end">
-            <a href="http://archives.citytree.net/" target="_blank" class="hide-mobile">
-              <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" fill="white"><path d="M1520 1216q0-40-28-68l-208-208q-28-28-68-28-42 0-72 32 3 3 19 18.5t21.5 21.5 15 19 13 25.5 3.5 27.5q0 40-28 68t-68 28q-15 0-27.5-3.5t-25.5-13-19-15-21.5-21.5-18.5-19q-33 31-33 73 0 40 28 68l206 207q27 27 68 27 40 0 68-26l147-146q28-28 28-67zm-703-705q0-40-28-68l-206-207q-28-28-68-28-39 0-68 27l-147 146q-28 28-28 67 0 40 28 68l208 208q27 27 68 27 42 0 72-31-3-3-19-18.5t-21.5-21.5-15-19-13-25.5-3.5-27.5q0-40 28-68t68-28q15 0 27.5 3.5t25.5 13 19 15 21.5 21.5 18.5 19q33-31 33-73zm895 705q0 120-85 203l-147 146q-83 83-203 83-121 0-204-85l-206-207q-83-83-83-203 0-123 88-209l-88-88q-86 88-208 88-120 0-204-84l-208-208q-84-84-84-204t85-203l147-146q83-83 203-83 121 0 204 85l206 207q83 83 83 203 0 123-88 209l88 88q86-88 208-88 120 0 204 84l208 208q84 84 84 204z"/></svg>
-            </a>
-            <a href="https://www.facebook.com/Citytree/" target="_blank" class="hide-mobile">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-            </a>
-          </span>
+          <a href="#donate-anchor" class="btn btn-primary">תרמו לעץ</a>
         </span>
       </div>
     </div>
@@ -136,13 +109,10 @@
         <a class="nav-link active" data-toggle="tab" href="#about" role="tab">אודות הפרויקט</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" data-toggle="tab" href="#faq" role="tab">שאלות נפוצות</a>
+        <a class="nav-link" data-toggle="tab" href="#contact" role="tab">יצירת קשר</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://www.facebook.com/Citytree/" target="_blank">
-          עדכונים
-          <img src="img/facebook.svg" alt="עדכונים בפייסבוק" />
-        </a>
+        <a class="nav-link" data-toggle="tab" href="#calendar" role="tab">יומן אירועים</a>
       </li>
     </ul>
     <div id="tab-content">
@@ -151,82 +121,69 @@
           <div class="row">
             <div class="col-xl-6 col-lg-5 col-md-2"></div>
             <div class="box col-xl-6 col-lg-7 col-md-10">
-              <h2>מה מאה אלף שקל עכשיו? איך זה קרה?</h2>
-              <p>בעצם לא קרה שום דבר מיוחד - כרגיל התמסרנו, תמי ואלון, למה שנראה לנו הכי חשוב, בלי לעשות שום תוכנית כלכלית - הרי אם היינו מנסים לתכנן "כלכלית" - מזמן עץבעיר לא היה עץבעיר... לפני שישה חודשים הוראת הקבע של שכר הדירה קפאה מרוב בהלה מהמצב האקלימי והאקולוגי, היא הבינה שבלעדיה יהיה לנו הרבה יותר קל להקדיש את עצמנו למרד בהכחדה - ואז, לפני שבועיים, שמנו לב והבנו שלושה דברים:
-                <br /><br />
-                <strong>אנחנו חייבים 45 אלף שקל לבעלת הבית</strong>
-                <br /><br />
-                <strong>אנחנו חייבים להמשיך להתמסר למרד בהכחדה ולאוטופיה עירונית</strong>
-                <br /><br />
-                <strong>כדי להבטיח שנוכל להמשיך למרוד בשיטה, אנחנו צריכים את התמיכה שלכם גם קדימה.</strong>
-                <br /><br />
-                מי שמורד בשיטה, לא באמת יכול להתפרנס מהשיטה - מי שמתפרנס מהשיטה לא יכול למרוד בה.
+              <h2>מהו עץבעיר ומה הוא נותן?</h2>
+              <p>
+                עץבעיר הוא מרחב פיזי להשתתפות פעילה בשינוי שמתחולל היום ברחבי העולם. אנחנו נקודה אחת מני אינספור נקודות ברשת תומכת החיים שנקראת "התנועה הגדולה". עץבעיר הוא גם חלק מהמרד בהכחדה ונקודה בולטת בתנועה הסביבתית בישראל. אפשר לבוא לפגוש את תמי, אלון וחבורת המתלמדים והדיירות שחיות לפרקים בדירה או מבקרות בה, להציץ לבועה קטנה של חמימות ושפיות בלב לבה של העיר ולעבודה שנעשית כדי לממש את חזון "עיר גנים" של סר פטריק גדס ולברוא אנושות חדשה שיודעת איך לחיות על פני הכדור הכחול היפה. ההזמנה להצטרף לעשייה תמיד פתוחה! אנחנו נותנים מהזמן ומהמרחב שלנו במתנה - באקטיביזם, במעגלים ובמפגשים, כגון חוגי בית של המרד בהכחדה, אירוח פגישות מהפכניות של המרד ושל כל מיזם סביבתי רדיקלי בסלון הפתוח של העץ, אנחנו מארחים ומזינים פעילים ופעילות ונותנים מרחב מנוחה שמשרה את רוח העולם היפה שכולנו יודעות שאפשרי, להשראה, למידה משותפת והבראה. אנחנו מתפרנסות מסיורים, סדנאות והרצאות, והתשלום תמיד גמיש ומותאם למי שמשלם.
               </p>
-              <button type="button" onclick="donate('about')" class="btn btn-outline-primary hide-mobile">תרמו לעץ</button>
+              <a href="#gifts-anchor" id="gifts-link" class="btn btn-outline">
+                לאלבום המתנות 
+                <svg width="24" height="24" viewBox="0 0 14 16">
+                  <path d="M13 4h-1.38c.19-.33.33-.67.36-.91.06-.67-.11-1.22-.52-1.61C11.1 1.1 10.65 1 10.1 1h-.11c-.53.02-1.11.25-1.53.58-.42.33-.73.72-.97 1.2-.23-.48-.55-.88-.97-1.2-.42-.32-1-.58-1.53-.58h-.03c-.56 0-1.06.09-1.44.48-.41.39-.58.94-.52 1.61.03.23.17.58.36.91H1.98c-.55 0-1 .45-1 1v3h1v5c0 .55.45 1 1 1h9c.55 0 1-.45 1-1V8h1V5c0-.55-.45-1-1-1H13zm-4.78-.88c.17-.36.42-.67.75-.92.3-.23.72-.39 1.05-.41h.09c.45 0 .66.11.8.25s.33.39.3.95c-.05.19-.25.61-.5 1h-2.9l.41-.88v.01zM4.09 2.04c.13-.13.31-.25.91-.25.31 0 .72.17 1.03.41.33.25.58.55.75.92L7.2 4H4.3c-.25-.39-.45-.81-.5-1-.03-.56.16-.81.3-.95l-.01-.01zM7 12.99H3V8h4v5-.01zm0-6H2V5h5v2-.01zm5 6H8V8h4v5-.01zm1-6H8V5h5v2-.01z"></path>
+                </svg>
+              </a>
             </div>
           </div>
         </div>
-        <div class="tab-pane fade" id="faq" role="tabpanel">
-          <div id="faq-inner">
-              <h2>שאלות נפוצות</h2>
-              <ul class="plus">
-                <li>
-                  <h4>מה הן התשורות בקמפיין?</h4>
-                  <p>
-                    חברות וחברי קהילת העץ נרתמות להצלה במגוון דרכים - יש מי שנותנת כסף ויש מי שנותן מתנות, יש מי שנתנה זמן במתנה והרימה את כל הקמפיין הזה! כל החברות נותנות המתנות מתועדות באלבום המתנות שלנו - ואפשר לבחור מתנה כשאתן תורמות כסף. המתנות מסודרות לפי גובה התרומה, והאלבום יתעדכן תוך כדי הקמפיין.
-                  </p>
-                </li>
-                <li>
-                  <h4>כיצד אבחר את המתנה שאעדיף?</h4>
-                  <p>אם תבחרו לקבל מתנה בעד תרומתכם/ן, אתם/ן מוזמינים/ות לתת מבט <a href="https://docs.google.com/presentation/d/1pFrDKIWrJ5Fn0gInWlwGp0meiLJGQEFHyhelGDk8-E0/edit?ts=5d45973b#slide=id.g5eff918f4a_0_15">בקטלוג המתנות</a>. כאן, תוכלו למצוא את הרשימה המלאה והעדכנית של תרומות השותפים והשותפות התומכים בעץבעיר. לאחר שבחרתם/ן מתנה, היכנסו לדף התשלום וציינו בהערות במפורש מהי המתנה שבחרתם/ן.</p>
-                </li>
-                <li>
-                  <h4>כיצד אוכל ליצור קשר?</h4>
-                  <p>
-                      תמי ואלון זמינים לענות על כל שאלה בטלפון <a href="tel:+97235254196">03-5254196</a> או באימייל <a href="mailto:tree@citytree.co.il">tree@citytree.co.il</a>.
-
-                  </p>
-                </li>
-              </ul>
-            </div>
+        <div class="tab-pane fade" id="contact" role="tabpanel">
+          <div id="contact-inner">
+            <h2>שאלות נפוצות</h2>
+            <ul class="plus">
+              <li>
+                <h4>איפה העץ?</h4>
+                <p>
+                  ממש בלב העיר תל אביב-יפו<br />
+                  ביאליק 25 דירה 7 תל אביב-יפו
+                  <br /><br />
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3380.8473765787858!2d34.76861731504611!3d32.073376526835425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4c808c5a88f3%3A0xf87e0681964f7087!2z16LXpdeR16LXmdeoIC0g15HXmdeqINec15DXp9eV15zXldeS15nXlCDXoteZ16jXldeg15nXqg!5e0!3m2!1sen!2sil!4v1588950430061!5m2!1sen!2sil" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </p>
+              </li>
+              <li>
+                <h4>כיצד אוכל ליצור קשר?</h4>
+                <p>
+                  תמי ואלון זמינים לענות על כל שאלה בטלפון <a href="tel:+97235254196">03-5254196</a> או באימייל <a href="mailto:tree@citytree.co.il">tree@citytree.co.il</a>.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="calendar" role="tabpanel">
+          <iframe src="https://calendar.google.com/calendar/b/1/embed?height=600&amp;wkst=1&amp;bgcolor=%238ad2ce&amp;ctz=Asia%2FJerusalem&amp;src=Zm1oajBuMmFudjlwcnNvcXVob2MyMmc4bTBAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%234285F4&amp;mode=WEEK&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;showPrint=0&amp;showTitle=0&amp;showNav=1" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
     </div>
   </div>
-  <div class="bg2" id="you">
+  <div class="bg2" id="donate">
     <div class="container">
       <div class="row">
         <div class="box col-xl-6 col-lg-7 col-md-10">
-          <h2>כאן אתם נכנסים לתמונה</h2>
+          <h2 id="donate-anchor">איך אפשר לתרום לעץבעיר?</h2>
           <p>
-            מאה אלף שקל נשמע כמו הרבה כסף, אבל זה כלום לעומת 35 מיליון שקל ששופרסל ישלמו לאלשטיין על 1.2 טון בשר קפוא מיובא מארגנטינה - על סבל של בעלי חיים, פליטות גזי חממה, ואובדן מכאיב ומקומם של יערות גשם השיטה שלנו מתגמלת יפה - והמשחטה הזו ממחישה את ההשמדה הביולוגית שמובילה אותנו אל הגיהנום ברגע זה ממש - המרד בהכחדה ועץבעיר הם העוגנים שלנו בים הסוער של המבול שאנחנו כבר בעיצומו - הרבה כבר איבדנו, וההצלה לא תבוא מהשיטה, שיתוף פעולה איתה ועם סכימות המחשבה שלה ("לכו לעבוד") הוא הסכמה להשמדה.
-            <br /><br />
-            מאה אלף שקל זה מאה א'נשים שנותנים 1000, או אלף א'נשים שנותנים 100 - זה מה שהקמפיין הזה יוצא להשיג. הכסף שלכם יכול להבטיח את שלום העץ ואת המשך העבודה שלו למען החיים. הקמפיין הוא עוד הזדמנות להפיץ את האמת על מה שקורה עכשיו ממש לכדור הכחול היפה שלנו - אנא עזרו לנו להפיץ את המסר הכואב הזה! זה בדמנו.
+            <button type="button" onclick="donateBit()" class="btn btn-primary btn-bitpay">תרמו בביט</button>
+            <a href="https://paypal.me/citytree" class="btn btn-primary btn-paypal">תרמו בפייפאל</a>
+            <a href="https://www.ezpay.co.il/Payment.aspx?id=13295" class="btn btn-primary">תרמו באיזיפיי</a>
+            <a href="https://www.patreon.com/m/CityTree" class="btn btn-primary btn-patreon">תרמו בפטריון</a>
           </p>
           <button type="button" onclick="donate('yous')" class="btn btn-primary hide-mobile">תרמו לעץ</button>
         </div>
       </div>
     </div>
   </div>
-  <!-- <div id="countdown">
-    <div id="clock">
-      <span id="seconds"></span>
-      <span id="minutes"></span>
-      <span id="hours"></span>
-    </div>
-    <span id="days"></span>
-  </div> -->
   <div class="container" id="short">
     <div class="row justify-content-center">
       <div class="col-xl-10 col-md-12 col-sm-12 col-xs-10 text-center">
-        <h2>אנחנו צריכים אתכם יותר מתמיד</h2>
+        <h2>הזמנה תמידית להצטרפות ולהשתתפות</h2>
         <p>
-          אם לא נצליח לגייס את הכסף,  לא יהיה עץבעיר.<br />
-          נסגור, נחזור להורים, נגור אצל חברים (לאף אחד מאתנו אין חסכונות ששמנו בצד, אין לנו כסף לשלם שכר דירה כפרטים, וזה גם לא מעניין אותנו), נמשיך למרוד. תמי תעשה חוגי בית בכל הארץ, ותמשיך ללמד ולייצר מצגות שמסבירות מה הולך, אלון ימשיך לגנן ולפעול בכל פורום אקטיביסטי אפשרי, הוא ימשיך גם לכתוב שירים. לא נמות, לא בגלל הכסף.<br /><br />
-          רק דבר אחד יחסר - המקום היחיד והמיוחד הזה בלב העיר תל אביב שמחזיק את האפשרות של אוטופיה עירונית, שבו אפשר לנשום ואפשר לחיות, ואפשר לפגוש חיים. אפשר לקבל אוכל מזין ותשובות מא'נשים שחיים אחרת, שבו אפשר לקיים פגישות מהפכניות אמתיות, לקיים מפגשי עבודה והטמעה של המרד בהכחדה, שבו יודעים ומדגימים איך לשקם אדמה ואיך לגדל מזון ואיך לצאת מהסופר, שבו מתקיים הקורס "עושות חיים בבית", שבו יש קומפוסט וגינה ואהבה, בנקודת דיקור חשובה - כיכר ביאליק.<br />
-          זה הכול.<br /><br />
-          נדמה לנו שלעץבעיר עדיין יש תפקיד חשוב למלא בסיפור העצום של התנועה הגדולה, ברגעי המבחן האחרונים של האנושות - שלמקום הזה יש מה לתרום לקידום העולם היפה יותר שכולנו יודעות שאפשרי - אם גם אתן מרגישות ככה, זה הזמן להפסיק להאמין ש"מישהו אחר" כבר יטפל בזה, ש"בטח נסתדר" - אנחנו מבקשים - קחו חלק בטיפול בבעיה הזו, אנא עזרו לנו להמשיך.
-          <br /><br />
+          בימי שלישי אפשר לבוא לפגוש את תמי, אלון וחבורת המתלמדים והדיירות שחיות לפרקים בדירה או מבקרות בה, אפשר להגיע לסדנאות או לקנות חומץ או סבון. זו הזדמנות להציץ לבועה קטנה של חמימות ושפיות בלב ליבה של העיר, ולכל העבודה שנעשית כדי לממש את חזונו של סר פטריק גדס, וכדי לברוא אנושות חדשה שיודעת איך לחיות על פני הכדור הכחול היפה - ההזמנה להצטרף לעשייה תמיד פתוחה! בימי שלישי - בית פתוח כל היום ועבודה בגינות עם אלון משלוש; בימי שישי - עבודה בגינות עם אלון משלוש; בימי שישי כל שבועיים - "עושות חיים בבית" עם תמי - קורס בתשלום - לפרטים נוספים. פעם בשישה שבועות יוצא עלון בדוא"ל שמעדכן על כל הנעשה בעץ ובעיר - טופס הצטרפות לרשימת התפוצה אפשר לתאם איתנו סדנאות, סיורים וארוחות, בטלפון: 03-525-4196 או בדוא"ל: tree@citytree.net . אפשר, כמובן, לתרום כסף לעץ כדי שנוכל להמשיך להתמסר לעבודת השיקום והשינוי. אנחנו לשירותכם בכל שאלה בטלפון ואפשר גם לתאם פגישות אישיות עם תמי או עם אלון.
         </p>
         <button type="button" onclick="donate('short')" class="btn btn-secondary hide-mobile">תרמו לעץ</button>
       </div>
@@ -250,25 +207,11 @@
             <span>₪30</span>
           </div>
         </div>
-        <div class="gift" onclick="chooseGift('id.g5eff918f4a_0_22')">
-          <img src="img/dry-fruit.jpg" />
-          <div>
-            <h3>תפוחים אורגנים מיובשים מעשה ידי אביטל</h3>
-            <span>₪30</span>
-          </div>
-        </div>
         <div class="gift" onclick="chooseGift('id.g5e7f5b963f_1_63')">
           <img src="img/lechem.jpg" />
           <div>
             <h3>לחם כוסמת מעשה ידי אביטל</h3>
             <span>₪30</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5e6a6b8c30_0_17')">
-          <img src="img/pickles.jpg" />
-          <div>
-            <h3>חמוצי דלעת מעשה ידי אביטל</h3>
-            <span>₪40</span>
           </div>
         </div>
         <div class="gift" onclick="chooseGift('id.g5eff918f4a_0_31')">
@@ -283,34 +226,6 @@
           <div>
             <h3>גרנולה RAW מעשה ידי אביטל</h3>
             <span>₪40</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5e7f5b963f_1_87')">
-          <img src="img/moringa.jpg" />
-          <div>
-            <h3>שתיל של עץ מורינגה מגינת חמוטל</h3>
-            <span>₪50</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5fcbacf55d_0_0')">
-          <img src="img/runningtrees.jpg" />
-          <div>
-            <h3>עצים רצים - שירי ילדים מאת רחלי מרחב</h3>
-            <span>₪50</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5f197bb3c6_0_18')">
-          <img src="img/makrame.jpg" />
-          <div>
-            <h3>מתלה מקרמה לעציץ מעשה ידי עדי אביגיל</h3>
-            <span>₪80</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5e7f5b963f_1_21')">
-          <img src="img/calendar.jpg" />
-          <div>
-            <h3>לוח שנה בגינה מתנה מאת אילנה שטיין</h3>
-            <span>₪100</span>
           </div>
         </div>
         <div class="gift" onclick="chooseGift('id.g5e6a6b8c30_0_24')">
@@ -341,31 +256,10 @@
             <span>₪200</span>
           </div>
         </div>
-        <div class="gift" onclick="chooseGift('id.g5e7f5b963f_2_0')">
-          <img src="img/yehefulim.jpg" />
-          <div>
-            <h3>סדנת יחפוליים: מתנה מאת לבלוב מלניקוב</h3>
-            <span>₪200</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5e7f5b963f_2_26')">
-          <img src="img/peri.jpg" />
-          <div>
-            <h3>סיור בדירה המהפכנית של פרי סמנון</h3>
-            <span>₪200</span>
-          </div>
-        </div>
         <div class="gift" onclick="chooseGift('id.g5e7f5b963f_2_9')">
           <img src="img/nahat.jpg" />
           <div>
             <h3>סדנת נחת אישית עם תמי צרי</h3>
-            <span>₪250</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5e7f5b963f_2_49')">
-          <img src="img/kesem.jpg" />
-          <div>
-            <h3>סדנת מבוא לאנימיזם מתנה מאת רינה קסם</h3>
             <span>₪250</span>
           </div>
         </div>
@@ -376,60 +270,18 @@
             <span>₪350</span>
           </div>
         </div>
-       <div class="gift" onclick="chooseGift('id.g5e7f5b963f_0_10')">
-          <img src="img/orlevgood.jpg" />
-          <div>
-            <h3>הדרכת טבע פרטית מתנה מאת אורלב צח</h3>
-            <span>₪400</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5f197bb3c6_2_17')">
-          <img src="img/chentzvi.jpg" />
-          <div>
-            <h3>פגישת ייעוץ עם חן צבי למוביל/ת קהילה</h3>
-            <span>₪350</span>
-          </div>
-        </div>
         <div class="gift" onclick="chooseGift('id.g5e7f5b963f_2_104')">
-          <img src="img/general.jpg" />
+          <img src="img/retreat.jpg" />
           <div>
             <h3>יום ריטריט בעץבעיר</h3>
             <span>₪500</span>
           </div>
         </div>
         <div class="gift" onclick="chooseGift('id.g5e7f5b963f_2_66')">
-          <img src="img/general.jpg" />
+          <img src="img/home.jpg" />
           <div>
             <h3>השתתפות בקורס "עושות חיים בבית"</h3>
             <span>₪300</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5fe1007d3e_1_78')">
-          <img src="img/bronz.jpg" />
-          <div>
-            <h3>הספר "ברונז" מתנת הסופר אמיר חרש</h3>
-            <span>₪100</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5e7f5b963f_0_18')">
-          <img src="img/amir.jpg" />
-          <div>
-            <h3>עמדת ההפתעות של כתבן א'</h3>
-            <span>₪1,500</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5f197bb3c6_2_0')">
-          <img src="img/general.jpg" />
-          <div>
-            <h3>יום טיול לבקשתך עם מורה דרך אישי - בני שלביץ</h3>
-            <span>₪2,000</span>
-          </div>
-        </div>
-        <div class="gift" onclick="chooseGift('id.g5e7f5b963f_2_121')">
-          <img src="img/general.jpg" />
-          <div>
-            <h3>חברות שנתית בעץבעיר</h3>
-            <span>₪1,200</span>
           </div>
         </div>
         <div class="gift" onclick="chooseGift('id.g5f49fe9aee_11_0')">
@@ -461,7 +313,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
-          <h2>ומה יקרה אם נגייס יותר ממאה אלף?</h2>
+          <h2>החזון של העץ</h2>
           <p>
             בעזרתם של מאה א'נשים שנותנים 100 שקלים בחודש, זה יכסה את שכר הדירה ועוד כמה הוצאות, ואז:<br />
             <ul>

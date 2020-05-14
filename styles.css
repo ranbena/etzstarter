@@ -221,10 +221,12 @@ iframe {
 
 #buttons {
   text-align: left;
+  flex-wrap: wrap;
 }
 
 #buttons .btn {
-  margin-left: 8px;
+  margin: 0 0 8px 8px;
+  white-space: nowrap;
 }
 
 #buttons a:not(.btn) {
@@ -241,6 +243,44 @@ iframe {
 
 #buttons a:not(.btn):hover svg {
   fill: #003535;
+}
+
+.top-content p a,
+#contact-inner a {
+  color: #048184;
+  text-decoration: underline;
+}
+
+.top-content p a:hover,
+#contact-inner a:hover {
+  text-decoration: none;
+}
+
+.btn-paypal {
+  background-color: #fec514;
+  border-color: #019cde;
+  color: #013088;
+}
+
+.btn-paypal:hover {
+  border-color: #019cde;
+  color: #019cde;
+  background-color: white;
+}
+
+.btn-patreon {
+  background-color: rgb(232, 91, 70);
+  border-color: rgb(232, 91, 70);
+}
+
+.btn-patreon:hover {
+  border-color: rgb(232, 91, 70);
+  color: rgb(232, 91, 70);
+}
+
+.btn-bitpay {
+  background-color: #d22834;
+  border-color: #494949;
 }
 
 #gifts-link {
@@ -271,7 +311,7 @@ iframe {
 }
 
 /* spacing for scroll position */
-#gifts-anchor {
+#gifts-anchor, #donate-anchor {
   margin-top: -136px;
   padding-top: 136px;
 }
@@ -295,6 +335,10 @@ iframe {
 #tab-content {
   background-color: #8ad2ce;
   padding: 30px 0;
+}
+
+#calendar iframe {
+  min-height: 600px;
 }
 
 .nav {
@@ -350,16 +394,16 @@ iframe {
   } 
 }
 
-#faq-inner {
+#contact-inner {
   background: white;
   padding: 20px;
 }
 
-#you {
+#donate {
   padding: 50px 0;
 }
 
-#you .container {
+#donate .container {
   background: url(img/you.jpg) no-repeat left top;
   background-size: contain;
 }
